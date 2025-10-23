@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Module 3 Solution - Food, LLC</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8;
+            padding-top: 70px;
+        }
+        
+        .navbar-default {
+            background-color: #333333;
+            border: 0;
+            border-radius: 0;
+            padding: 10px 0;
+            transition: background-color 0.3s ease;
+        }
+
+        .navbar-brand h1 {
+            color: #ff9800;
+            font-size: 28px;
+            font-weight: 700;
+            margin-top: 0;
+            margin-bottom: 0;
+            line-height: 1;
+        }
+
+        .navbar-toggle {
+            margin-top: 5px;
+            border-color: #ff9800;
+            transition: all 0.2s ease;
+        }
+        .navbar-toggle .icon-bar {
+            background-color: #ff9800;
+        }
+        
+        #collapsable-nav {
+            background-color: #2a2a2a;
+            border-top: 1px solid #ff9800;
+        }
+        
+        #collapsable-nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        
+        #collapsable-nav li {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        #collapsable-nav li:last-child {
+            border-bottom: none;
+        }
+
+        #collapsable-nav a {
+            color: #ffffff;
+            font-size: 18px;
+            text-align: center;
+            padding: 15px 0;
+            display: block;
+            transition: background-color 0.2s ease;
+        }
+
+        #collapsable-nav a:hover, #collapsable-nav a:focus {
+            background-color: #444444;
+            color: #ff9800;
+        }
+
+        #menu-heading {
+            margin-top: 40px;
+            margin-bottom: 30px;
+            font-size: 40px;
+            color: #333333;
+            font-weight: 700;
+        }
+
+        .menu-item-tile {
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            padding: 15px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            min-height: 700px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .menu-item-tile:hover {
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .menu-item-tile h3 {
+            font-weight: 700;
+            font-size: 24px;
+            color: #ff9800;
+            padding: 10px 0;
+            margin-top: 0;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #ff9800;
+        }
+
+        .menu-item-tile p {
+            line-height: 1.6;
+            color: #555555;
+            text-align: justify;
+        }
+        
+        .back-to-top {
+            display: block;
+            text-align: right;
+            margin-top: 20px;
+            font-weight: 600;
+            color: #1e88e5;
+            text-decoration: underline;
+        }
+        
+        @media (min-width: 768px) and (max-width: 991px) {
+        }
+        
+        @media (max-width: 767px) {
+            
+            .navbar-brand {
+                padding-top: 10px;
+            }
+            .navbar-brand h1 {
+                font-size: 24px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav id="header-nav" class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    
+                    <a href="#" class="navbar-brand"><h1>Food, LLC</h1></a>
+
+                    <button type="button" class="navbar-toggle collapsed visible-xs" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                
+                <div id="collapsable-nav" class="collapse navbar-collapse">
+                    <ul id="nav-list" class="nav navbar-nav">
+                        <li><a href="#chicken-section">Chicken</a></li>
+                        <li><a href="#beef-section">Beef</a></li>
+                        <li><a href="#sushi-section">Sushi</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="main-content" class="container">
+        
+        <h2 id="menu-heading" class="text-center">Our Menu</h2>
+        
+        <section class="row">
+            
+            <div id="chicken-section" class="col-md-4 col-sm-6 col-xs-12 menu-item-tile">
+                <h3 class="text-center">Chicken</h3>
+                <p>
+                    A delicious grilled chicken breast marinated in a blend of Mediterranean herbs, lemon, and olive oil. Served with a side of saffron rice and seasonal roasted vegetables. The chicken is slow-cooked to maintain maximum moisture and tenderness, then finished on a searing grill to lock in the flavor and provide a perfect crust. This dish is low in fat, high in protein, and is the perfect option for a healthy, satisfying meal. Our specialty is the herb butter reduction drizzled over the top just before serving. We use free-range chicken sourced from local farms.
+                    <br><br>
+                    * **Texture:** Tender and moist meat with a slightly crispy skin.
+                    * **Flavor Profile:** Zesty, herbaceous, and savory with a hint of smoky char.
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    * **Allergens:** Contains dairy (butter in reduction).
+                </p>
+                <a href="#menu-heading" class="back-to-top">Back to Top</a>
+            </div>
+            
+            <div id="beef-section" class="col-md-4 col-sm-6 col-xs-12 menu-item-tile">
+                <h3 class="text-center">Beef</h3>
+                <p>
+                    Our signature slow-braised short ribs. These ribs are seasoned with a dry rub of smoked paprika, brown sugar, and coffee grounds, then slow-braised in a rich Pinot Noir reduction for eight hours until they are fork-tender. The ribs are served atop a creamy, truffle-infused polenta. The complex flavors of the red wine and coffee create a deep, umami-rich experience. This is a hearty and indulgent dish, perfect for a special occasion. We recommend pairing it with a full-bodied Cabernet Sauvignon.
+                    <br><br>
+                    * **Texture:** Fall-off-the-bone tenderness, creamy polenta.
+                    * **Flavor Profile:** Rich, smoky, savory, with notes of dark fruit and earthy truffle.
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    * **Preparation Time:** Requires 45 minutes from order to table.
+                </p>
+                <a href="#menu-heading" class="back-to-top">Back to Top</a>
+            </div>
+
+            <div id="sushi-section" class="col-md-4 col-sm-12 col-xs-12 menu-item-tile">
+                <h3 class="text-center">Sushi</h3>
+                <p>
+                    The Dragon's Breath Roll: a specialty spicy tuna and avocado roll topped with eel sauce, crispy tempura flakes, and a micro cilantro garnish. The tuna is sustainably sourced and hand-cut daily. We blend sriracha with a house-made mayonnaise for the perfect level of heat, balancing it with the sweetness of the rich eel sauce. Served with fresh ginger and wasabi. This roll offers a perfect blend of fresh, crunchy, soft, and spicy elements.
+                    <br><br>
+                    * **Texture:** Soft rice, smooth tuna, creamy avocado, crunchy tempura.
+                    * **Flavor Profile:** Spicy heat, sweet umami, and refreshing raw fish flavor.
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    * **Note:** Can be modified to be fully vegetarian upon request.
+                </p>
+                <a href="#menu-heading" class="back-to-top">Back to Top</a>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
